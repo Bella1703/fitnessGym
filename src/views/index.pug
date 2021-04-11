@@ -1,0 +1,26 @@
+doctype html
+html(lang='en')
+  head
+
+    //- Meta
+    meta(charset='UTF-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1')
+    meta(http-equiv='X-UA-Compatible', content='ie=edge')
+
+    //- Basic Seo
+    block basicSeo
+      meta(name='description' content='Index page')
+      meta(name='keywords', content='index, page')
+      meta(name='author' content='')
+
+    //- Title
+    block title
+      title FitnessGym
+
+  body
+
+    //- Header
+    include components/header.pug
+
+    //- block scripts
+    block scripts
