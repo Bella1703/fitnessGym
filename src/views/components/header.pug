@@ -1,4 +1,23 @@
 //- src/views/components/header.pug
 
 header.header
-  p Hello, world!
+  div.header__content
+    a(href='#')
+      span.logo
+        p.logo__first-part FITNESS
+        p.logo__second__part GYM
+    nav.nav
+      ul.nav-list
+        li
+          a(href='#') О&nbsp;нас
+        li
+          a(href='#') Прайс
+        li
+          a(href='#') Еще
+        li
+          a(href='#') Контакты
+
+    div.burgerMenu
+      div.burgerMenu__1-line
+      div.burgerMenu__2-line
+      div.burgerMenu__3-line

@@ -1,6 +1,19 @@
-$font-stack:    'Inter', sans-serif
-$primary-color: red
+
+@mixin flex($flex-direction, $justify-content, $align-items)
+  display: flex
+  flex-direction: $flex-direction
+  justify-content: $justify-content
+  align-items: $align-items
 
 body
   font: 100% $font-stack
-  color: $primary-color
+  color: $font-color-main
+  background: $bg-light-color
+
+.logo
+  font: 110% $font-stack
+  &__first-part
+    color: $font-color-main
+  &__second__part
+    color: $font-color-second
+
