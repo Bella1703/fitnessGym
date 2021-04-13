@@ -1,7 +1,11 @@
 
 let burgerMenu = document.querySelector('.burgerMenu');
-function burgerMenuChange() {
+function menuChange() {
   burgerMenu.classList.toggle("change");
+  document.body.querySelector('.nav').classList.toggle('nav_mobile');
+  document.body.querySelector('.nav-list').classList.toggle('nav-list_mobile');
 }
-burgerMenu.addEventListener('click', burgerMenuChange);
+burgerMenu.addEventListener('click', menuChange);
+
+
 

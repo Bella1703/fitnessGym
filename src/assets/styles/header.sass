@@ -15,17 +15,50 @@
 .nav
   width: 100%
   max-width: 515px
+
 .nav-list
+  @include flex(row, space-between, center)
   @media screen and (max-width: $breakpoint-1)
     display: none
-  @include flex(row, space-between, center)
   width: 100%
   max-width: 515px
   text-transform: uppercase
   & li
     padding-left: 10px
+    &:hover
+      opacity: 0.7
   & a
     color: $font-color-second
+
+@keyframes move-down
+  0%
+    top: -200px
+  100%
+    top: 55px
+
+@keyframes move-up
+  0%
+    top: 55px
+  100%
+    top: -200px
+
+.nav_mobile
+  position: fixed
+  left: -20px
+  top: 55px
+  width: 100%
+  max-width: 100%
+  padding: 0 20px
+  z-index: -1
+  background-color: $bg-dark-color
+  animation: move-down 2s
+
+.nav-list_mobile
+  @include flex(column, flex-start, center)
+  width: 100%
+  max-width: 100%
+  & li
+    padding: 15px
 
 .burgerMenu
   @media screen and (max-width: $breakpoint-1)
@@ -43,10 +76,12 @@
 
 .change
   & .burgerMenu__1-line
-    -webkit-transform: rotate(-35deg) translate(-4px, 4px)
-    transform: rotate(-35deg) translate(-4px, 4px)
+    -webkit-transform: rotate(-45deg) translate(-4px, 4px)
+    transform: rotate(-45deg) translate(-4px, 4px)
   & .burgerMenu__2-line
     opacity: 0
   & .burgerMenu__3-line
-    -webkit-transform: rotate(35deg) translate(-3px, -6px)
-    transform: rotate(35deg) translate(-3px, -6px)
+    -webkit-transform: rotate(45deg) translate(-3px, -6px)
+    transform: rotate(45deg) translate(-3px, -6px)
+
+
