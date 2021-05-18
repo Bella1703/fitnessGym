@@ -19,9 +19,19 @@
 .nav-list
   @include flex(row, space-between, center)
   @media screen and (max-width: $breakpoint-1)
-    display: none
+    position: fixed
+    left: -20px
+    width: 100%
+    max-width: 100%
+    padding: 0 20px
+    z-index: -1
+    background-color: $bg-dark-color
+    @include flex(column, flex-start, center)
+    & li
+      padding: 15px
   width: 100%
   max-width: 515px
+  top: -200px
   text-transform: uppercase
   & li
     padding-left: 10px
@@ -42,23 +52,13 @@
   100%
     top: -200px
 
-.nav_mobile
-  position: fixed
-  left: -20px
+.nav-list__move-down
   top: 55px
-  width: 100%
-  max-width: 100%
-  padding: 0 20px
-  z-index: -1
-  background-color: $bg-dark-color
-  animation: move-down 2s
+  animation: move-down 1s
 
-.nav-list_mobile
-  @include flex(column, flex-start, center)
-  width: 100%
-  max-width: 100%
-  & li
-    padding: 15px
+.nav-list__move-up
+  top: -200px
+  animation: move-up 1s
 
 .burgerMenu
   @media screen and (max-width: $breakpoint-1)
