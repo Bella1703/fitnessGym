@@ -10,6 +10,8 @@ body
   color: $light-color
   line-height: 1.5
   background: $bg-light-color
+  font-size: $font-main
+  text-align: center
 
 .logo
   font: 110% $font-stack
@@ -18,13 +20,27 @@ body
   &__second__part
     color: $font-color-second
 
-.button
-  width: 250px
+.button a
+  display: block
+  padding: 15px
   background-color: $light-color
   border-radius: 24px
-  padding: 15px
   color: $font-color-second
-  font-size: $font-button
   text-transform: uppercase
   @media screen and (max-width: $breakpoint-1)
     width: 100%
+
+
+
+
+
+
+
+.button_big a
+  width: 250px
+  font-size: 25px
+
+.button_small a
+  width: 250px
+  font-size: 25px
+

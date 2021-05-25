@@ -4,6 +4,7 @@
   min-width: 300px
   background: $bg-dark-color
   padding: 0 20px
+  font-size: $font-main
 
   &__content
     @include flex(row, space-between, center)
@@ -11,6 +12,8 @@
     height: 100%
     max-width: 1300px
     margin: auto
+    a
+      z-index: 2
 
 .nav
   width: 100%
@@ -24,14 +27,13 @@
     width: 100%
     max-width: 100%
     padding: 0 20px
-    z-index: -1
     background-color: $bg-dark-color
     @include flex(column, flex-start, center)
     & li
       padding: 15px
   width: 100%
   max-width: 515px
-  top: -200px
+  top: -250px
   text-transform: uppercase
   & li
     padding-left: 10px
@@ -42,7 +44,7 @@
 
 @keyframes move-down
   0%
-    top: -200px
+    top: -250px
   100%
     top: 55px
 
@@ -50,15 +52,15 @@
   0%
     top: 55px
   100%
-    top: -200px
+    top: -250px
 
 .nav-list__move-down
   top: 55px
-  animation: move-down 1s
+  animation: move-down 0.5s
 
 .nav-list__move-up
-  top: -200px
-  animation: move-up 1s
+  top: -250px
+  animation: move-up 0.5s
 
 .burgerMenu
   @media screen and (max-width: $breakpoint-1)
