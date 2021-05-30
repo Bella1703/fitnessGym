@@ -2,6 +2,9 @@
   width: 100%
   height: 100vh
   max-height: 975px
+  background: $bg-light-color
+  background: url("/assets/images/main-pic.jpg") no-repeat center center
+  background-size: cover
 
   @include flex(column, center, center)
 
@@ -12,11 +15,9 @@
 
   &__content
     @include flex(column, center, center)
-    @include content(0, $bg-dark-color)
     height: 1000px
 
-    background: url("/assets/images/main-pic.jpg") no-repeat center center
-    background-size: cover
+
 
   &__main-pic
     width: 100%

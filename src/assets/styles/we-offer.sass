@@ -1,0 +1,29 @@
+.we-offer
+  width: 100%
+  background: $bg-light-color
+  @include flex(column, center, center)
+  text-align: left
+
+  &__content-wrapper
+    @include flex(column, center, center)
+    @include content(60px, $bg-light-color)
+
+  &__content
+    @include flex(row, space-between, flex-start)
+    flex-wrap: wrap
+    width: 100%
+    max-width: 1100px
+
+    & div
+      width: 100%
+      max-width: 300px
+      padding: 40px 0px
+
+  & p
+    font-size: $font-small
+
+
+
+
+
+
