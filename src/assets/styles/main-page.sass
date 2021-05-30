@@ -12,11 +12,10 @@
 
   &__content
     @include flex(column, center, center)
-    width: calc(100% - 40px)
-    max-width: 1440px
+    @include content(0, $bg-dark-color)
     height: 1000px
-    padding: 0 20px
-    background: url("/assets/images/main-pic.jpg") no-repeat
+
+    background: url("/assets/images/main-pic.jpg") no-repeat center center
     background-size: cover
 
   &__main-pic
