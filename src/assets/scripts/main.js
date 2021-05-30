@@ -19,8 +19,9 @@ burgerMenu.addEventListener('click', menuChange);
 
 let header = document.querySelector('.header');
 
-function StickyHeader() {
+function sticToTheTop() {
     let windowTop = -document.documentElement.getBoundingClientRect().top;
+    console.log(windowTop);
     if (windowTop < 40) {
       let headerTop = 40 - windowTop;
       header.style.top = headerTop + 'px';
@@ -30,9 +31,4 @@ function StickyHeader() {
   }
 }
 
-window.addEventListener('scroll', StickyHeader);
-
-
-$(document).ready(function(){
-  alert(jQuery.fn.jquery);
-});
+window.addEventListener('scroll', sticToTheTop);
