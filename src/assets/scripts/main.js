@@ -1,3 +1,4 @@
+//
 let burgerMenu = document.querySelector('.burgerMenu');
 function menuChange() {
   if(burgerMenu.classList.contains("change")) {
@@ -14,3 +15,24 @@ burgerMenu.addEventListener('click', menuChange);
 
 
 
+
+
+let header = document.querySelector('.header');
+
+function StickyHeader() {
+    let windowTop = -document.documentElement.getBoundingClientRect().top;
+    if (windowTop < 40) {
+      let headerTop = 40 - windowTop;
+      header.style.top = headerTop + 'px';
+    }
+  if (windowTop > 95) {
+    header.style.top = '0';
+  }
+}
+
+window.addEventListener('scroll', StickyHeader);
+
+
+$(document).ready(function(){
+  alert(jQuery.fn.jquery);
+});
