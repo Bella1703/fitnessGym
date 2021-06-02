@@ -21,7 +21,6 @@ let header = document.querySelector('.header');
 
 function sticToTheTop() {
     let windowTop = -document.documentElement.getBoundingClientRect().top;
-    console.log(windowTop);
     if (windowTop < 40) {
       let headerTop = 40 - windowTop;
       header.style.top = headerTop + 'px';
@@ -32,3 +31,6 @@ function sticToTheTop() {
 }
 
 window.addEventListener('scroll', sticToTheTop);
+
+
+new WOW().init();
