@@ -1,15 +1,15 @@
 .about-us-page
-  width: 100%
-  background: $bg-dark-color
+  @include block($bg-dark-color)
   @include flex(column, center, center)
 
   &__content
     @include flex(column, center, center)
-    @include content(160px, $bg-dark-color)
+    @include content(100px, $bg-dark-color)
 
     p
       width: 100%
       max-width: 900px
+      text-align: center
 
 
 
