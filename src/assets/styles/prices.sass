@@ -1,0 +1,47 @@
+.prices
+  @include block($bg-dark-color)
+  @include flex(column, center, center)
+  background: url("/assets/images/pic2.jpg") no-repeat center center
+  background-size: cover
+
+
+  &__content-wrapper
+    @include flex(column, center, center)
+    @include content(100px, none)
+
+  &__content
+    @include flex(row, center, flex-start)
+    flex-wrap: wrap
+    width: 100%
+    max-width: 1100px
+    text-align: center
+
+  & p
+    color: $font-color-second
+
+.price-cards
+  @include flex(row, center, center)
+  flex-wrap: wrap
+  padding: 60px 0 0 0
+
+.price-card
+  @include flex(column, space-between, center)
+  background-color: $bg-dark-color
+  opacity: 0.5
+  margin: 15px
+  padding: 60px
+  height: 150px
+  width: 100%
+  max-width: 200px
+  color: $light-color
+  @media screen and (max-width: $breakpoint-1)
+    padding: 30px
+  & div
+    font-size: $font-small
+  & .price
+    color: $font-color-second
+    font-weight: bold
+    font-size: $font-main
+
+
+
