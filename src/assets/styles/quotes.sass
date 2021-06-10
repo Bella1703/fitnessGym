@@ -1,0 +1,18 @@
+.quotes
+  @include block($bg-dark-color)
+  @include flex(column, center, center)
+
+  &__content
+    @include flex(column, center, center)
+    @include content(100px, $bg-dark-color)
+
+  & p
+    width: 100%
+    max-width: 900px
+    text-align: center
+  & p:first-child
+    margin: 0 0 30px 0
+
+
+
+

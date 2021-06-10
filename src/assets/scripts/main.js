@@ -33,4 +33,13 @@ function sticToTheTop() {
 window.addEventListener('scroll', sticToTheTop);
 
 
+
 new WOW().init();
+
+
+$(document).ready(function(){
+  $('.single-item').slick();
+});
+
+
+

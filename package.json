@@ -55,6 +55,7 @@
     "jquery": "^3.6.0",
     "normalize.css": "^8.0.1",
     "scrollmagic": "^2.0.5",
+    "slick-carousel": "^1.8.1",
     "wowjs": "^1.1.3"
   }
 }
